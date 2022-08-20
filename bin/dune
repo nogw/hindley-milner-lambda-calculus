@@ -1,0 +1,9 @@
+(executable
+ (public_name hmlc)
+ (name main)
+ (libraries hmlc menhirLib)
+ (preprocess (pps ppx_deriving.show sedlex.ppx)))
+
+(menhir
+ (modules parser)
+ (flags --explain))

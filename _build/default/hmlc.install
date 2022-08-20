@@ -1,0 +1,8 @@
+lib: [
+  "_build/install/default/lib/hmlc/META"
+  "_build/install/default/lib/hmlc/dune-package"
+  "_build/install/default/lib/hmlc/opam"
+]
+bin: [
+  "_build/install/default/bin/hmlc"
+]

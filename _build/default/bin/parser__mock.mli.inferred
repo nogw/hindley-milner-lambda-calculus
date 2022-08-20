@@ -1,0 +1,19 @@
+type token =
+    VAR of string
+  | RPARENS
+  | LPARENS
+  | LAMBDA
+  | INT of int
+  | EOF
+  | ARROW
+val menhir_begin_marker : int
+val xv_term_opt : Tree.expr option
+val xv_nonempty_list_VAR_ : string list
+val xv_expr_var : Tree.expr
+val xv_expr_parens : Tree.expr
+val xv_expr_lambda : Tree.expr
+val xv_expr_int : Tree.expr
+val xv_expr_atom : Tree.expr
+val xv_expr_apply : Tree.expr
+val xv_expr : Tree.expr
+val menhir_end_marker : int
